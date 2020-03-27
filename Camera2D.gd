@@ -36,7 +36,7 @@ func _physics_process(delta):
 func shake():
 	var amount = pow(trauma, trauma_power)
 	noise_y += 1
-	zoom = lerp(zoom,Vector2(0.3,0.3),get_physics_process_delta_time()*2.5)
+#	zoom = lerp(zoom,Vector2(0.3,0.3),get_physics_process_delta_time()*2.5)
 
 func add_trauma(amount):
 	trauma = min(trauma + amount, 1.0)
