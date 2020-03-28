@@ -17,12 +17,17 @@ func _process(_delta: float) -> void:
 		die()
 	var inputVector = Vector2.ZERO
 	inputVector.x = Input.get_action_strength("move_right") - Input.get_action_strength('move_left')
-	inputVector.y = Input.get_action_strength("move_down") - Input.get_action_strength('move_up')
+#	inputVector.y = Input.get_action_strength("move_down") - Input.get_action_strength('move_up')
+	inputVector.y = -1
 	inputVector = inputVector.normalized()
 	if inputVector != Vector2.ZERO:
 		velocity = velocity.move_toward(inputVector * MAX_SPEED, ACCELERATION * _delta)
 	else:
-		velocity = velocity.move_toward(Vector2.ZERO,FRICTION * _delta	)
+		velocity = velocity.move_toward(Vector2.ZERO,FRICTION * _delta)
+	if Input.is_action_just_pressed("move_left"):
+		 velocity.x = -1 * ACCELERATION
+	if Input.is_action_just_pressed("move_right"):
+		 velocity.x = 1 * ACCELERATION
 	velocity = move_and_slide(velocity)
 
 func die():
