@@ -90,6 +90,7 @@ func addItem(_item :Item):
 func setHp(amount):
 	if vulnerable:
 		hp = amount
+		GM.UI._update_hp_bar(hp)
 		if hp <= 0:
 			die()
 		vulnerable = false
