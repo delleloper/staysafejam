@@ -9,12 +9,18 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Area2D",
+"class": "Item",
+"language": "GDScript",
+"path": "res://BaseItem.gd"
+}, {
 "base": "Camera2D",
 "class": "ShakeCamera2D",
 "language": "GDScript",
 "path": "res://Camera2D.gd"
 } ]
 _global_script_class_icons={
+"Item": "",
 "ShakeCamera2D": ""
 }
 
@@ -23,6 +29,10 @@ _global_script_class_icons={
 config/name="Staysafejam"
 run/main_scene="res://Game.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GM="*res://GameManager.gd"
 
 [display]
 

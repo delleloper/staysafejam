@@ -1,16 +1,114 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Enemy.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Basebuilding.tscn" type="PackedScene" id=3]
+[ext_resource path="res://UI.tscn" type="PackedScene" id=4]
+[ext_resource path="res://BaseItem.tscn" type="PackedScene" id=5]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 2058.9, 26.9497 )
 
 [node name="Game" type="Node"]
 
-[node name="Characters" type="Node2D" parent="."]
+[node name="Level" type="Node2D" parent="."]
+position = Vector2( -76.9791, -11.6913 )
 
-[node name="YSort" type="YSort" parent="Characters"]
+[node name="LevelEntities" type="YSort" parent="Level"]
 
-[node name="Player" parent="Characters/YSort" instance=ExtResource( 2 )]
-position = Vector2( 111.344, 58.2978 )
+[node name="Player" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 988.524, 349.812 )
 
-[node name="Enemy" parent="Characters/YSort" instance=ExtResource( 1 )]
-position = Vector2( 386.727, 120.944 )
+[node name="Basebuilding" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 215.795, 410.062 )
+
+[node name="Basebuilding2" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 525.431, 412.852 )
+
+[node name="Basebuilding6" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 215.795, 186.902 )
+
+[node name="Basebuilding5" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 525.431, 189.691 )
+
+[node name="Basebuilding8" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 215.795, 630.434 )
+
+[node name="Basebuilding7" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 525.431, 633.223 )
+
+[node name="Basebuilding10" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 215.795, 845.226 )
+
+[node name="Basebuilding9" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 525.431, 848.015 )
+
+[node name="Basebuilding4" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1315.43, 498.176 )
+
+[node name="Basebuilding3" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1625.06, 500.965 )
+
+[node name="Basebuilding16" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1315.43, 275.015 )
+
+[node name="Basebuilding15" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1625.06, 277.805 )
+
+[node name="Basebuilding14" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1315.43, 718.547 )
+
+[node name="Basebuilding13" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1625.06, 721.337 )
+
+[node name="Basebuilding12" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1315.43, 933.339 )
+
+[node name="Basebuilding11" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1625.06, 936.129 )
+
+[node name="BaseItem" parent="Level/LevelEntities" instance=ExtResource( 5 )]
+position = Vector2( 833.308, 592.774 )
+rotation = 0.785397
+
+[node name="Character" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 805.154, 193.471 )
+
+[node name="Walls" type="Node2D" parent="Level"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Level/Walls"]
+position = Vector2( 26.7229, -11.6913 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Walls/StaticBody2D"]
+position = Vector2( 1666.92, 12.6962 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Level/Walls"]
+position = Vector2( 28.4727, 1082.24 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Walls/StaticBody2D2"]
+position = Vector2( 2034.73, 846.41 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Level/Walls"]
+position = Vector2( -5.97791, -263.973 )
+rotation = 1.57079
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Walls/StaticBody2D3"]
+position = Vector2( 1171.6, 22.5053 )
+shape = SubResource( 1 )
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="Level/Walls"]
+position = Vector2( 1941.8, -250.723 )
+rotation = 1.57079
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Level/Walls/StaticBody2D4"]
+position = Vector2( 1210.83, -1782.24 )
+shape = SubResource( 1 )
+
+[node name="UI" parent="Level" instance=ExtResource( 4 )]
+visible = false
+margin_left = 75.3037
+margin_top = 26.2433
+margin_right = 1995.3
+margin_bottom = 1106.24
