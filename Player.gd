@@ -10,7 +10,7 @@ const SLIDE_ACCELERATION = 600
 const MAX_SPEED = 600
 const FRICTION = 500
 
-export var hp = 3
+export var hp = 3 setget setHp
 
 var velocity = Vector2.ZERO
 var inventory = [3]
@@ -18,8 +18,8 @@ var running = true
 var currentSide = side.MIDDLE
 var reachedEnd = false
 var slideValue = 180
-onready var tw = $Tween
 var slideAmount = 0
+var vulnerable = true
 
 signal game_failed
 signal game_succeded
@@ -31,8 +31,6 @@ func _ready() -> void:
 	GM.player = self
 
 func _process(delta: float) -> void:
-	if hp <= 0:
-		die()
 	if reachedEnd:
 		running = false
 		$Camera2D.position.y = 0
@@ -78,13 +76,25 @@ func _physics_process(_delta: float) -> void:
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO,FRICTION * _delta)
 
-
-
 	velocity = move_and_slide(velocity)
 
 func die():
 	queue_free()
+	yield(get_tree().create_timer(3),"timeout")
+	get_tree().change_scene("res://MainMenu.tscn")
 
 func addItem(_item :Item):
 	print(Item.itemTypes.keys()[_item.type])
 	inventory[_item.type] += 1
+
+func setHp(amount):
+	if vulnerable:
+		hp = amount
+		if hp <= 0:
+			die()
+		vulnerable = false
+		$PlayerAnimator.play("damage")
+		yield($PlayerAnimator,"animation_finished")
+		vulnerable = true
+
+

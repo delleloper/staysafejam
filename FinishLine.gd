@@ -11,5 +11,5 @@ func _on_FinishLine_body_entered(body: Node) -> void:
 func _ready() -> void:
 	dialog = obtainDialog(id)
 
-func obtainDialog(id):
+func obtainDialog(_id):
 	return "Its dangerous to go alone take this"

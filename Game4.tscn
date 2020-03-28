@@ -384,23 +384,18 @@ position = Vector2( 967.935, -2537.19 )
 
 [node name="Path2D" parent="Level/LevelEntities" instance=ExtResource( 7 )]
 position = Vector2( 1308.44, 2533.57 )
-speed = 0.2
 
 [node name="Path2D2" parent="Level/LevelEntities" instance=ExtResource( 7 )]
 position = Vector2( 1308.44, 1654.96 )
-speed = 0.2
 
 [node name="Path2D4" parent="Level/LevelEntities" instance=ExtResource( 7 )]
 position = Vector2( 1308.44, -515.448 )
-speed = 0.2
 
 [node name="Path2D5" parent="Level/LevelEntities" instance=ExtResource( 7 )]
 position = Vector2( 1308.44, -2158.76 )
-speed = 0.2
 
 [node name="Path2D3" parent="Level/LevelEntities" instance=ExtResource( 7 )]
 position = Vector2( 1308.44, 846.668 )
-speed = 0.2
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

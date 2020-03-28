@@ -3,7 +3,7 @@ extends Area2D
 class_name Item
 enum itemTypes {MEDICINE, MASK, FOOD}
 
-var type
+export(itemTypes) var type
 
 func _ready() -> void:
 	randomize()
