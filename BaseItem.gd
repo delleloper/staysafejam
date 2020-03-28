@@ -6,9 +6,11 @@ enum itemTypes {MEDICINE, MASK, FOOD}
 var type
 
 func _ready() -> void:
-	type = itemTypes.FOOD
+	randomize()
+	type = randi()% itemTypes.size()
 
 
 func _on_BaseItem_body_entered(body: Node) -> void:
 	if body.is_in_group("player"):
 		body.addItem(self)
+		queue_free()

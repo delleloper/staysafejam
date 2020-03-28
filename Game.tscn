@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Character.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
@@ -6,14 +6,16 @@
 [ext_resource path="res://UI.tscn" type="PackedScene" id=4]
 [ext_resource path="res://BaseItem.tscn" type="PackedScene" id=5]
 [ext_resource path="res://FinishLine.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Level.gd" type="Script" id=7]
 
 [node name="Game" type="Node"]
 __meta__ = {
-"_edit_vertical_guides_": [ 1085.33, 892.362, 667.149 ]
+"_edit_vertical_guides_": [ 1072.87, 892.362, 712.582 ]
 }
 
 [node name="Level" type="Node2D" parent="."]
 position = Vector2( -76.9791, -11.6913 )
+script = ExtResource( 7 )
 
 [node name="LevelEntities" type="Node2D" parent="Level"]
 
@@ -313,7 +315,7 @@ position = Vector2( 833.308, 592.774 )
 rotation = 0.785397
 
 [node name="BaseItem2" parent="Level/LevelEntities" instance=ExtResource( 5 )]
-position = Vector2( 833.308, -2622.92 )
+position = Vector2( 741.033, -2614.72 )
 rotation = 0.785397
 
 [node name="BaseItem3" parent="Level/LevelEntities" instance=ExtResource( 5 )]
@@ -329,7 +331,7 @@ position = Vector2( 742.165, 2031.98 )
 rotation = 0.785397
 
 [node name="BaseItem8" parent="Level/LevelEntities" instance=ExtResource( 5 )]
-position = Vector2( 1164.06, 2725.68 )
+position = Vector2( 1147.44, 2725.68 )
 rotation = 0.785397
 
 [node name="BaseItem7" parent="Level/LevelEntities" instance=ExtResource( 5 )]
@@ -337,7 +339,7 @@ position = Vector2( 971.061, 2721.68 )
 rotation = 0.785397
 
 [node name="BaseItem6" parent="Level/LevelEntities" instance=ExtResource( 5 )]
-position = Vector2( 746.061, 2717.68 )
+position = Vector2( 789.321, 2717.68 )
 rotation = 0.785397
 
 [node name="FinishLine" parent="Level/LevelEntities" instance=ExtResource( 6 )]
@@ -345,7 +347,7 @@ modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 970.294, -3204.35 )
 
 [node name="Character" parent="Level/LevelEntities/FinishLine" instance=ExtResource( 1 )]
-position = Vector2( 0, -94.8696 )
+position = Vector2( -1, -150 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

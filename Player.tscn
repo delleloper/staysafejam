@@ -22,7 +22,7 @@ radius = 34.3614
 script = ExtResource( 3 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2( 0, -225.634 )
+position = Vector2( 0, -225 )
 current = true
 zoom = Vector2( 0.5, 0.5 )
 smoothing_enabled = true

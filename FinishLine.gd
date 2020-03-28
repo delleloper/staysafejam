@@ -6,7 +6,7 @@ var dialog
 func _on_FinishLine_body_entered(body: Node) -> void:
 	if body.is_in_group("player"):
 		GM.triggerDialog(dialog)
-		body.running = false
+		body.reachedEnd = true
 
 func _ready() -> void:
 	dialog = obtainDialog(id)
