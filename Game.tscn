@@ -10,11 +10,10 @@
 
 [node name="Game" type="Node"]
 __meta__ = {
-"_edit_vertical_guides_": [ 1072.87, 892.362, 712.582 ]
+"_edit_vertical_guides_": [ 1161.61, 969.979, 787.617 ]
 }
 
 [node name="Level" type="Node2D" parent="."]
-position = Vector2( -76.9791, -11.6913 )
 script = ExtResource( 7 )
 
 [node name="LevelEntities" type="Node2D" parent="Level"]
@@ -118,6 +117,30 @@ position = Vector2( 215.795, -2370.47 )
 [node name="Basebuilding17" parent="Level/LevelEntities" instance=ExtResource( 3 )]
 position = Vector2( 525.431, -2367.68 )
 
+[node name="Basebuilding112" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 215.795, -3845.63 )
+
+[node name="Basebuilding111" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 525.431, -3842.84 )
+
+[node name="Basebuilding110" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 215.795, -4068.79 )
+
+[node name="Basebuilding109" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 525.431, -4066 )
+
+[node name="Basebuilding108" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 215.795, -3625.26 )
+
+[node name="Basebuilding107" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 525.431, -3622.47 )
+
+[node name="Basebuilding106" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 215.795, -3410.47 )
+
+[node name="Basebuilding105" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 525.431, -3407.68 )
+
 [node name="Basebuilding80" parent="Level/LevelEntities" instance=ExtResource( 3 )]
 position = Vector2( 219.178, -671.662 )
 
@@ -189,6 +212,30 @@ position = Vector2( 1403.33, -2370.47 )
 
 [node name="Basebuilding25" parent="Level/LevelEntities" instance=ExtResource( 3 )]
 position = Vector2( 1712.97, -2367.68 )
+
+[node name="Basebuilding104" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1403.33, -3845.63 )
+
+[node name="Basebuilding103" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1712.97, -3842.84 )
+
+[node name="Basebuilding102" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1403.33, -4068.79 )
+
+[node name="Basebuilding101" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1712.97, -4066 )
+
+[node name="Basebuilding100" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1403.33, -3625.26 )
+
+[node name="Basebuilding99" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1712.97, -3622.47 )
+
+[node name="Basebuilding98" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1403.33, -3410.47 )
+
+[node name="Basebuilding97" parent="Level/LevelEntities" instance=ExtResource( 3 )]
+position = Vector2( 1712.97, -3407.68 )
 
 [node name="Basebuilding96" parent="Level/LevelEntities" instance=ExtResource( 3 )]
 position = Vector2( 1406.72, -671.662 )
@@ -311,11 +358,11 @@ position = Vector2( 1405.64, 1926.91 )
 position = Vector2( 1715.27, 1929.7 )
 
 [node name="BaseItem" parent="Level/LevelEntities" instance=ExtResource( 5 )]
-position = Vector2( 833.308, 592.774 )
+position = Vector2( 788.257, 598.074 )
 rotation = 0.785397
 
 [node name="BaseItem2" parent="Level/LevelEntities" instance=ExtResource( 5 )]
-position = Vector2( 741.033, -2614.72 )
+position = Vector2( 786.583, -2588.69 )
 rotation = 0.785397
 
 [node name="BaseItem3" parent="Level/LevelEntities" instance=ExtResource( 5 )]
@@ -327,7 +374,7 @@ position = Vector2( 967.165, 2035.98 )
 rotation = 0.785397
 
 [node name="BaseItem5" parent="Level/LevelEntities" instance=ExtResource( 5 )]
-position = Vector2( 742.165, 2031.98 )
+position = Vector2( 781.82, 2031.98 )
 rotation = 0.785397
 
 [node name="BaseItem8" parent="Level/LevelEntities" instance=ExtResource( 5 )]
@@ -347,7 +394,7 @@ modulate = Color( 1, 0, 0, 1 )
 position = Vector2( 970.294, -3204.35 )
 
 [node name="Character" parent="Level/LevelEntities/FinishLine" instance=ExtResource( 1 )]
-position = Vector2( -1, -150 )
+position = Vector2( -1, -350 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 

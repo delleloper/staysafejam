@@ -17,6 +17,9 @@ var inventory = [3]
 var running = true
 var currentSide = side.MIDDLE
 var reachedEnd = false
+var slideValue = 180
+onready var tw = $Tween
+var slideAmount = 0
 
 signal game_failed
 signal game_succeded
@@ -40,33 +43,42 @@ func _process(delta: float) -> void:
 	else:
 		emit_signal("game_failed")
 
+
 func _physics_process(_delta: float) -> void:
 	var inputVector = Vector2.ZERO
 	if running:
 		inputVector.y = -1
+		if Input.is_action_just_pressed("move_left") && (currentSide != side.LEFT):
+	#		var PosX = position.x - slideValue
+	#		tw.interpolate_property(self,"position",position,Vector2(PosX, position.y-20),.1)
+	#		tw.start()
+			#I know is not the correct way but it works ¯\_(ツ)_/¯  we can fix later
+			translate(Vector2(-slideValue,0))
+	#		velocity.x = -SLIDE_ACCELERATION
+			if currentSide == side.MIDDLE:
+				currentSide = side.LEFT
+			else:
+				currentSide = side.MIDDLE
+
+		if Input.is_action_just_pressed("move_right") && (currentSide != side.RIGHT):
+	#		#I know is not the correct way but it works ¯\_(ツ)_/¯  we can fix later
+	#		var PosX = position.x + slideValue
+	#		tw.interpolate_property(self,"position",position,Vector2(PosX, position.y-20),.1)
+	#		tw.start()
+			translate(Vector2(slideValue,0))
+	#		velocity.x += SLIDE_ACCELERATION
+			if currentSide == side.MIDDLE:
+				currentSide = side.RIGHT
+			else:
+				currentSide = side.MIDDLE
 	else:
 		inputVector.y = 0
 	if inputVector != Vector2.ZERO:
 		velocity = velocity.move_toward(inputVector * MAX_SPEED, ACCELERATION * _delta)
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO,FRICTION * _delta)
-	if Input.is_action_just_pressed("move_left") && (currentSide != side.LEFT):
-		#I know is not the correct way but it works ¯\_(ツ)_/¯  we can fix later
-		translate(Vector2(-180,0))
-#		velocity.x = -SLIDE_ACCELERATION
-		if currentSide == side.MIDDLE:
-			currentSide = side.LEFT
-		else:
-			currentSide = side.MIDDLE
 
-	if Input.is_action_just_pressed("move_right") && (currentSide != side.RIGHT):
-		#I know is not the correct way but it works ¯\_(ツ)_/¯  we can fix later
-		translate(Vector2(180,0))
-#		velocity.x += SLIDE_ACCELERATION
-		if currentSide == side.MIDDLE:
-			currentSide = side.RIGHT
-		else:
-			currentSide = side.MIDDLE
+
 
 	velocity = move_and_slide(velocity)
 
