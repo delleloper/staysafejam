@@ -6,6 +6,7 @@ var percent = 0
 
 func _ready() -> void:
 	GM.UI = self
+	visible = true
 
 func displayDialog(dialog):
 	text.text = dialog
