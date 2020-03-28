@@ -23,11 +23,23 @@ _global_script_classes=[ {
 "class": "ShakeCamera2D",
 "language": "GDScript",
 "path": "res://Camera2D.gd"
+}, {
+"base": "Path2D",
+"class": "moving_obstacle",
+"language": "GDScript",
+"path": "res://moving_obstacle.gd"
+}, {
+"base": "Area2D",
+"class": "obstacle",
+"language": "GDScript",
+"path": "res://obstacle.gd"
 } ]
 _global_script_class_icons={
 "Item": "",
 "Player": "",
-"ShakeCamera2D": ""
+"ShakeCamera2D": "",
+"moving_obstacle": "",
+"obstacle": ""
 }
 
 [application]

@@ -1,0 +1,405 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://obstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Basebuilding.tscn" type="PackedScene" id=2]
+[ext_resource path="res://UI.tscn" type="PackedScene" id=3]
+[ext_resource path="res://FinishLine.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Character.tscn" type="PackedScene" id=7]
+
+[node name="Game" type="Node"]
+__meta__ = {
+"_edit_vertical_guides_": [ 1085.33, 892.362, 667.149, 704.032, 1051.3 ]
+}
+
+[node name="Level" type="Node2D" parent="."]
+position = Vector2( -76.9791, -11.6913 )
+
+[node name="LevelEntities" type="Node2D" parent="Level"]
+
+[node name="Player" parent="Level/LevelEntities" instance=ExtResource( 6 )]
+position = Vector2( 969.009, 3031.27 )
+
+[node name="Basebuilding" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 215.795, 410.062 )
+
+[node name="Basebuilding2" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 525.431, 412.852 )
+
+[node name="Basebuilding6" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 215.795, 186.902 )
+
+[node name="Basebuilding5" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 525.431, 189.691 )
+
+[node name="Basebuilding8" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 215.795, 630.434 )
+
+[node name="Basebuilding7" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 525.431, 633.223 )
+
+[node name="Basebuilding10" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 215.795, 845.226 )
+
+[node name="Basebuilding9" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 525.431, 848.015 )
+
+[node name="Basebuilding40" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.178, 2544.03 )
+
+[node name="Basebuilding39" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 528.808, 2546.82 )
+
+[node name="Basebuilding38" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.178, 2320.87 )
+
+[node name="Basebuilding37" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 528.808, 2323.66 )
+
+[node name="Basebuilding36" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.178, 2764.4 )
+
+[node name="Basebuilding35" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 528.808, 2767.19 )
+
+[node name="Basebuilding34" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.178, 2979.19 )
+
+[node name="Basebuilding33" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 528.808, 2981.98 )
+
+[node name="Basebuilding48" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.458, 1478.47 )
+
+[node name="Basebuilding47" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 529.088, 1481.26 )
+
+[node name="Basebuilding46" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.458, 1255.31 )
+
+[node name="Basebuilding45" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 529.088, 1258.1 )
+
+[node name="Basebuilding44" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.458, 1698.84 )
+
+[node name="Basebuilding43" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 529.088, 1701.63 )
+
+[node name="Basebuilding42" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.458, 1913.63 )
+
+[node name="Basebuilding41" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 529.088, 1916.42 )
+
+[node name="Basebuilding24" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 215.795, -2805.63 )
+
+[node name="Basebuilding23" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 525.431, -2802.84 )
+
+[node name="Basebuilding22" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 215.795, -3028.79 )
+
+[node name="Basebuilding21" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 525.431, -3026 )
+
+[node name="Basebuilding20" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 215.795, -2585.26 )
+
+[node name="Basebuilding19" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 525.431, -2582.47 )
+
+[node name="Basebuilding18" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 215.795, -2370.47 )
+
+[node name="Basebuilding17" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 525.431, -2367.68 )
+
+[node name="Basebuilding80" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.178, -671.662 )
+
+[node name="Basebuilding79" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 528.808, -668.873 )
+
+[node name="Basebuilding78" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.178, -894.823 )
+
+[node name="Basebuilding77" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 528.808, -892.033 )
+
+[node name="Basebuilding76" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.178, -451.292 )
+
+[node name="Basebuilding75" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 528.808, -448.502 )
+
+[node name="Basebuilding74" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.178, -236.499 )
+
+[node name="Basebuilding73" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 528.808, -233.709 )
+
+[node name="Basebuilding72" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.458, -1737.22 )
+
+[node name="Basebuilding71" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 529.088, -1734.43 )
+
+[node name="Basebuilding70" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.458, -1960.38 )
+
+[node name="Basebuilding69" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 529.088, -1957.59 )
+
+[node name="Basebuilding68" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.458, -1516.85 )
+
+[node name="Basebuilding67" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 529.088, -1514.06 )
+
+[node name="Basebuilding66" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 219.458, -1302.06 )
+
+[node name="Basebuilding65" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 529.088, -1299.27 )
+
+[node name="Basebuilding32" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1403.33, -2805.63 )
+
+[node name="Basebuilding31" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1712.97, -2802.84 )
+
+[node name="Basebuilding30" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1403.33, -3028.79 )
+
+[node name="Basebuilding29" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1712.97, -3026 )
+
+[node name="Basebuilding28" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1403.33, -2585.26 )
+
+[node name="Basebuilding27" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1712.97, -2582.47 )
+
+[node name="Basebuilding26" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1403.33, -2370.47 )
+
+[node name="Basebuilding25" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1712.97, -2367.68 )
+
+[node name="Basebuilding96" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1406.72, -671.662 )
+
+[node name="Basebuilding95" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1716.35, -668.873 )
+
+[node name="Basebuilding94" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1406.72, -894.823 )
+
+[node name="Basebuilding93" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1716.35, -892.033 )
+
+[node name="Basebuilding92" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1406.72, -451.292 )
+
+[node name="Basebuilding91" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1716.35, -448.502 )
+
+[node name="Basebuilding90" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1406.72, -236.499 )
+
+[node name="Basebuilding89" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1716.35, -233.709 )
+
+[node name="Basebuilding88" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1407, -1737.22 )
+
+[node name="Basebuilding87" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1716.63, -1734.43 )
+
+[node name="Basebuilding86" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1407, -1960.38 )
+
+[node name="Basebuilding85" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1716.63, -1957.59 )
+
+[node name="Basebuilding84" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1407, -1516.85 )
+
+[node name="Basebuilding83" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1716.63, -1514.06 )
+
+[node name="Basebuilding82" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1407, -1302.06 )
+
+[node name="Basebuilding81" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1716.63, -1299.27 )
+
+[node name="Basebuilding4" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1406.4, 423.34 )
+
+[node name="Basebuilding3" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1711.61, 426.13 )
+
+[node name="Basebuilding16" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1401.98, 200.18 )
+
+[node name="Basebuilding15" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1711.61, 202.969 )
+
+[node name="Basebuilding14" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1401.98, 643.712 )
+
+[node name="Basebuilding13" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1711.61, 646.501 )
+
+[node name="Basebuilding12" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1401.98, 858.504 )
+
+[node name="Basebuilding11" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1711.61, 861.293 )
+
+[node name="Basebuilding64" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1405.36, 2557.31 )
+
+[node name="Basebuilding63" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1714.99, 2560.1 )
+
+[node name="Basebuilding62" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1405.36, 2334.15 )
+
+[node name="Basebuilding61" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1714.99, 2336.94 )
+
+[node name="Basebuilding60" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1405.36, 2777.68 )
+
+[node name="Basebuilding59" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1714.99, 2780.47 )
+
+[node name="Basebuilding58" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1405.36, 2992.47 )
+
+[node name="Basebuilding57" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1714.99, 2995.26 )
+
+[node name="Basebuilding56" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1405.64, 1491.75 )
+
+[node name="Basebuilding55" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1715.27, 1494.54 )
+
+[node name="Basebuilding54" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1405.64, 1268.59 )
+
+[node name="Basebuilding53" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1715.27, 1271.38 )
+
+[node name="Basebuilding52" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1405.64, 1712.12 )
+
+[node name="Basebuilding51" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1715.27, 1714.91 )
+
+[node name="Basebuilding50" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1405.64, 1926.91 )
+
+[node name="Basebuilding49" parent="Level/LevelEntities" instance=ExtResource( 2 )]
+position = Vector2( 1715.27, 1929.7 )
+
+[node name="FinishLine" parent="Level/LevelEntities" instance=ExtResource( 4 )]
+modulate = Color( 1, 0, 0, 1 )
+position = Vector2( 970.294, -3204.35 )
+
+[node name="Character" parent="Level/LevelEntities/FinishLine" instance=ExtResource( 7 )]
+position = Vector2( 0, -94.8696 )
+
+[node name="obstacle" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 779.602, 2224.63 )
+
+[node name="obstacle2" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 1126.6, 2220.98 )
+
+[node name="obstacle3" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 967.935, 2502.42 )
+
+[node name="obstacle6" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 779.602, 1910.98 )
+
+[node name="obstacle5" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 1126.6, 1416.16 )
+
+[node name="obstacle4" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 967.935, 1654.8 )
+
+[node name="obstacle9" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 779.602, 856.254 )
+
+[node name="obstacle12" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 779.602, 246.828 )
+
+[node name="obstacle8" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 1126.6, 843.903 )
+
+[node name="obstacle10" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 1126.6, 250.061 )
+
+[node name="obstacle7" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 967.935, 1133.26 )
+
+[node name="obstacle11" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 967.935, 531.129 )
+
+[node name="obstacle18" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 779.602, -252.777 )
+
+[node name="obstacle17" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 779.602, -805.162 )
+
+[node name="obstacle22" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 779.602, -1433.7 )
+
+[node name="obstacle27" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 779.602, -2288.88 )
+
+[node name="obstacle28" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 779.602, -3007.46 )
+
+[node name="obstacle16" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 1126.6, -265.128 )
+
+[node name="obstacle15" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 1126.6, -801.928 )
+
+[node name="obstacle23" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 1126.6, -1306.69 )
+
+[node name="obstacle26" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 1126.6, -2161.87 )
+
+[node name="obstacle29" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 1126.6, -2825.83 )
+
+[node name="obstacle14" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 967.935, -13.8037 )
+
+[node name="obstacle13" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 967.935, -520.861 )
+
+[node name="obstacle19" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 967.935, -1038.04 )
+
+[node name="obstacle20" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 967.935, -1574.86 )
+
+[node name="obstacle21" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 967.935, -1943.44 )
+
+[node name="obstacle25" parent="Level/LevelEntities" instance=ExtResource( 1 )]
+position = Vector2( 967.935, -2537.19 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="UI" parent="CanvasLayer" instance=ExtResource( 3 )]
+visible = false

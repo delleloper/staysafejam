@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://obstacle.tscn" type="PackedScene" id=1]
+[ext_resource path="res://moving_obstacle.gd" type="Script" id=2]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, -340.023, 4.39453, 0, 0, 0, 0, -560.46, 5.11694, 0, 0, 0, 0, -145.46, 3.11694, 0, 0, 0, 0, -340.398, 3.66725 )
+}
+
+[node name="Path2D" type="Path2D"]
+curve = SubResource( 1 )
+script = ExtResource( 2 )
+
+[node name="PathFollow2D" type="PathFollow2D" parent="."]
+position = Vector2( -340.023, 4.39453 )
+rotation = 3.13832
+rotate = false
+
+[node name="obstacle" parent="PathFollow2D" instance=ExtResource( 1 )]
+modulate = Color( 1, 0.937255, 0, 1 )
