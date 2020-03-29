@@ -56,7 +56,6 @@ process_mode = 0
 smoothing_enabled = true
 smoothing_speed = 6.652
 script = ExtResource( 2 )
-target = NodePath("..")
 max_roll = 0.2
 
 [node name="PlayerAnimator" type="AnimationPlayer" parent="."]
