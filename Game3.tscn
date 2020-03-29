@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://obstacle.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Basebuilding.tscn" type="PackedScene" id=2]
 [ext_resource path="res://UI.tscn" type="PackedScene" id=3]
 [ext_resource path="res://FinishLine.tscn" type="PackedScene" id=4]
+[ext_resource path="res://street.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Character.tscn" type="PackedScene" id=7]
 
@@ -398,6 +399,8 @@ position = Vector2( 967.935, -1943.44 )
 
 [node name="obstacle25" parent="Level/LevelEntities" instance=ExtResource( 1 )]
 position = Vector2( 967.935, -2537.19 )
+
+[node name="street" parent="Level" instance=ExtResource( 5 )]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
