@@ -36,3 +36,9 @@ func _update_hp_bar(_hp : int):
 	$health_bar/Tween.interpolate_property($health_bar, "tint_progress", red, green, 0.6, Tween.TRANS_EXPO, Tween.EASE_OUT)
 	$health_bar/Tween.start()
 	pass
+	
+func _update_items(_inventory):
+	for i in range(0, 3):
+		$item_bar.get_child(i).get_node("Label").text = str(_inventory[i])
+		pass
+	pass

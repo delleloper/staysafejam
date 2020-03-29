@@ -86,6 +86,7 @@ func die():
 func addItem(_item :Item):
 	print(Item.itemTypes.keys()[_item.type])
 	inventory[_item.type] += 1
+	GM.UI._update_items(inventory)
 
 func setHp(amount):
 	if vulnerable:
