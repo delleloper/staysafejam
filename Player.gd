@@ -92,6 +92,7 @@ func setHp(amount):
 	if vulnerable:
 		hp = amount
 		GM.UI._update_hp_bar(hp)
+		AM.apply_filter()
 		if hp <= 0:
 			die()
 		vulnerable = false
