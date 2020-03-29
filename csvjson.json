@@ -1,0 +1,23 @@
+{
+  "start": {
+    "name": "start",
+    "text": "this is the start of you journey",
+    "level_index": 0,
+    "choice_a": "hospital",
+    "choice_b": "grandma"
+  },
+  "hospital": {
+    "name": "hospital",
+    "text": "You go to the hospital…",
+    "level_index": 2,
+    "choice_a": "future",
+    "choice_b": "future"
+  },
+  "grandma": {
+    "name": "grandma",
+    "text": "You go to your granny…",
+    "level_index": 1,
+    "choice_a": "future",
+    "choice_b": "future"
+  }
+}

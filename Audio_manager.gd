@@ -3,8 +3,6 @@ extends Node
 var filter_running : bool = false
 
 func _ready():
-	play_main_theme()
-#	play_gameplay()
 	pass
 
 func play_main_theme():
