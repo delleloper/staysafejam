@@ -10,6 +10,7 @@ var red : Color = Color("c32f2f")
 func _ready() -> void:
 	GM.UI = self
 	visible = true
+	AM.play_gameplay()
 
 func displayDialog(dialog):
 	text.text = dialog
@@ -21,6 +22,7 @@ func displayDialog(dialog):
 func hideDialog():
 	$AnimationPlayer.play_backwards("ShowDialog")
 	percent = 0
+	GM.change_scene(0)
 
 func _process(delta: float) -> void:
 	if displaying:

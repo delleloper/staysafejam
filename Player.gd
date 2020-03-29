@@ -81,7 +81,8 @@ func _physics_process(_delta: float) -> void:
 func die():
 	queue_free()
 	yield(get_tree().create_timer(3),"timeout")
-	get_tree().change_scene("res://MainMenu.tscn")
+	get_tree().reload_current_scene()
+#	get_tree().change_scene("res://MainMenu.tscn")
 
 func addItem(_item :Item):
 	print(Item.itemTypes.keys()[_item.type])
