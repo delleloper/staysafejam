@@ -57,7 +57,7 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/ShowDialog = SubResource( 1 )
 
-[node name="Item_bar" type="TextureProgress" parent="."]
+[node name="health_bar" type="TextureProgress" parent="."]
 margin_left = 21.0
 margin_top = 23.0
 margin_right = 372.0
@@ -75,4 +75,4 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Tween" type="Tween" parent="Item_bar"]
+[node name="Tween" type="Tween" parent="health_bar"]

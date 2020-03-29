@@ -32,7 +32,7 @@ func _process(delta: float) -> void:
 			hideDialog()
 
 func _update_hp_bar(_hp : int):
-	$Item_bar/Tween.interpolate_property($Item_bar, "value", _hp +1, _hp, 0.4, Tween.TRANS_BACK, Tween.EASE_OUT)
-	$Item_bar/Tween.interpolate_property($Item_bar, "tint_progress", red, green, 0.6, Tween.TRANS_EXPO, Tween.EASE_OUT)
-	$Item_bar/Tween.start()
+	$health_bar/Tween.interpolate_property($health_bar, "value", _hp +1, _hp, 0.4, Tween.TRANS_BACK, Tween.EASE_OUT)
+	$health_bar/Tween.interpolate_property($health_bar, "tint_progress", red, green, 0.6, Tween.TRANS_EXPO, Tween.EASE_OUT)
+	$health_bar/Tween.start()
 	pass
