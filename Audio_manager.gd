@@ -3,6 +3,8 @@ extends Node
 var filter_running : bool = false
 
 func _ready():
+	$player_main_theme.set_stream_paused(false)
+	$player_gameplay.set_stream_paused(false)
 	pass
 
 func play_main_theme():
@@ -13,25 +15,26 @@ func play_main_theme():
 	
 	if !$player_main_theme.is_playing():
 		$player_main_theme.play()
+		$player_main_theme.set_stream_paused(false)
 	else:
 		$player_main_theme.set_stream_paused(false)
 	
-	yield($Tween, "tween_all_completed")
+#	yield($Tween, "tween_all_completed") ###---> yield couses a sound bug, where you cange the music to fast the music would stop plaing
 	$player_gameplay.set_stream_paused(true)
 
 func play_gameplay():
 	$Tween.remove_all()
-	$Tween.interpolate_property($player_gameplay, "volume_db", $player_gameplay.volume_db, 0.0, 1.0, Tween.TRANS_SINE, Tween.EASE_OUT)
 	$Tween.interpolate_property($player_main_theme, "volume_db", $player_main_theme.volume_db, -90.0, 1.0, Tween.TRANS_SINE, Tween.EASE_OUT)
+	$Tween.interpolate_property($player_gameplay, "volume_db", $player_gameplay.volume_db, 0.0, 1.0, Tween.TRANS_SINE, Tween.EASE_OUT)
 	$Tween.start()
-	
+
 	if !$player_gameplay.is_playing():
 		$player_gameplay.play()
+		$player_gameplay.set_stream_paused(false)
 	else:
 		$player_gameplay.set_stream_paused(false)
-	pass
-	
-	yield($Tween, "tween_all_completed")
+
+#	yield($Tween, "tween_all_completed") ###---> yield couses a sound bug, where you cange the music to fast the music would stop plaing
 	$player_main_theme.set_stream_paused(true)
 
 func apply_filter():

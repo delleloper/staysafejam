@@ -22,19 +22,19 @@ func update_text():
 
 func _on_OptionA_pressed():
 	#no key -> go to menu
-	if !dictionary.has(dictionary[GM.current_key].choice_a) or !dictionary.has(dictionary[GM.current_key].choice_a):
+	if !dictionary.has(dictionary[GM.current_key].choice_a) or !dictionary.has(dictionary[GM.current_key].choice_b):
 		get_tree().change_scene("res://MainMenu.tscn")
-		
-	GM.current_key = dictionary[GM.current_key].choice_a
-	GM.change_scene(dictionary[GM.current_key].level_index)
+	else:
+		GM.current_key = dictionary[GM.current_key].choice_a
+		GM.change_scene(dictionary[GM.current_key].level_index)
 
 func _on_OptionB_pressed():
 	#no key -> go to menu
-	if !dictionary.has(dictionary[GM.current_key].choice_a) or !dictionary.has(dictionary[GM.current_key].choice_a):
+	if !dictionary.has(dictionary[GM.current_key].choice_a) or !dictionary.has(dictionary[GM.current_key].choice_b):
 		get_tree().change_scene("res://MainMenu.tscn")
-	
-	GM.current_key = dictionary[GM.current_key].choice_b
-	GM.change_scene(dictionary[GM.current_key].level_index)
+	else:
+		GM.current_key = dictionary[GM.current_key].choice_b
+		GM.change_scene(dictionary[GM.current_key].level_index)
 
 func convert_to_dic():
 	var file = File.new()
