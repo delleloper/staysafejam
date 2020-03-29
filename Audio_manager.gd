@@ -3,8 +3,6 @@ extends Node
 var filter_running : bool = false
 
 func _ready():
-	$player_main_theme.set_stream_paused(false)
-	$player_gameplay.set_stream_paused(false)
 	pass
 
 func play_main_theme():
