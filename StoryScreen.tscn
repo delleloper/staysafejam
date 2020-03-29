@@ -1,9 +1,10 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Theme.tres" type="Theme" id=1]
 [ext_resource path="res://Assets/sprites/Grandpa_1.png" type="Texture" id=2]
 [ext_resource path="res://Doubleplus.otf" type="DynamicFontData" id=3]
 [ext_resource path="res://StoryScreen.gd" type="Script" id=4]
+[ext_resource path="res://Assets/sprites/Untitled_Artwork.png" type="Texture" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 60
@@ -41,7 +42,21 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="player_portrait" type="TextureRect" parent="MarginContainer/HBoxContainer"]
+margin_top = 516.0
+margin_right = 300.0
+margin_bottom = 916.0
+rect_min_size = Vector2( 300, 400 )
+size_flags_horizontal = 0
+size_flags_vertical = 8
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="RichTextLabel" type="RichTextLabel" parent="MarginContainer/HBoxContainer"]
+margin_left = 337.0
 margin_right = 1343.0
 margin_bottom = 916.0
 size_flags_horizontal = 3
